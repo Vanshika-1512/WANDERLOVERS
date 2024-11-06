@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            height: 75px;
+            width: 100%;
+        }
+        .heading{
+            text-align: center;
+            margin: 10px;
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+        }
+        .ri-search-line{
+            border: 1px solid black;
+            margin: 2px;
+            cursor: pointer;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns:repeat(2,1fr) ;
+            gap:1rem;
+        }
+        .country{
+            background-color: #f3f4f6;
+            transition: transform 0.3s;
+        }
+        .country:hover {
+        transform: scale(1.04);
+        }
+        .country_name{
+            padding:1rem;
+            text-align: left;
+            display:flex;
+            align-self: center;
+            gap:0.5rem;
+            color:#282d31;
+            cursor: pointer;
+        }
+        .country_name i{
+            font-size: 1.2rem;
+        }
+        .country_name span{
+            font-style: italic;
+        }
+        .grid{
+            grid-template-columns: repeat(3,1fr);
+            gap:1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h2 class="heading">Start Your Journey</h2>
+        <div class="search">
+            <input type="text" class="search_input" placeholder="Search for your destination">
+            <span><i class="ri-search-line"></i></span>
+        </div>
+    </div>
+    <div class="journey">
+            <div class="grid">
+                <div class="country">
+                    <img src="italy.jpg" alt="Italy" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Italy</span>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="thailand.jpeg" alt="Thailand" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Thailand</span>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="france.jpeg" alt="France" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>France</span>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="japan.jpeg" alt="Japan" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Japan</span>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="dubai.jpeg" alt="Dubai" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Dubai</span>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="maldives.jpeg" alt="Maldives" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Maldives</span>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="norway.jpeg" alt="Norway" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Norway</span>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="turkey.jpeg" alt="Turkey" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Turkey</span>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="greece.jpeg" alt="Greece" height="400" width="410">
+                    <div class="country_name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Greece</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

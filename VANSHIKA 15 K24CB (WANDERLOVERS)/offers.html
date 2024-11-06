@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+        .offers{
+            width:100%;
+            height:135px;
+            background-position: center;
+            background-size: center;
+        }
+        .navbar{
+            width:100%;
+            padding:10px;
+            margin:auto;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav_title{
+            width:160px;
+            margin-top: -10px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 50px;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            text-transform: uppercase;            
+            font-weight: 600;
+            padding: 15px;
+            color: black;
+        }
+        li a:hover{
+            background:black;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+        .navbar a:hover{
+            color: white;
+        }
+        .container { 
+            background-color: #fff; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 5px; 
+            padding: 20px;
+            text-align: center;
+            gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        } 
+        .coupon{
+            background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        cursor: pointer;
+        }
+        .coupon:hover {
+        transform: scale(1.05);
+    }
+        .container img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+        } 
+        .container h2 { 
+            color: black; 
+            font-style: bold;
+            margin-top: 10px; 
+        } 
+        .container p { 
+            color: #777; 
+            line-height: 1.5; 
+            margin-top: 10px; 
+        } 
+        .container .code { 
+            font-size: 20px; 
+            color: black; 
+            margin-bottom: 10px; 
+        } 
+        .container .expiration { 
+            color: black; 
+            font-size: 14px; 
+        } 
+    </style>
+</head>
+<body>
+    <div class="offers">
+        <div class="navbar">
+            <nav>
+                <ul class="nav_links">
+                    <li class="nav_title">Offers</li>
+                    <li><a href="link">All offers</a></li>
+                    <li><a href="link">Holiday Package</a></li>
+                    <li><a href="link">Flights</a></li>
+                    <li><a href="link">Hotels</a></li>
+                    <li><a href="link">Train</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container"> 
+        <div class="coupon">
+            <div class="1">
+                <div class="logo"> 
+                    <img src= "air_india.jpeg"> 
+                </div> 
+                <h2>LIVE NOW! Sale by Air India</h2> 
+                <p> Get upto <span class="code">20% off</span> on business class fares!</p> 
+                <p>Code: <span class="code">Save20</span></p>
+                <p> Use code at checkout to enjoy the discount.</p>
+                <p>Expires: <span class="expiration"> November 30, 2024</span> 
+                </p>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="2">
+                <div class="logo"> 
+                    <img src= "cruise.jpeg"> 
+                </div> 
+                <h2>Get, Set, Sail By Our Cruise Holiday Package!</h2> 
+                <p> Get upto <span class="code">15% off</span></p> 
+                <p>Code: <span class="code">Cruise15</span></p>
+                <p> Use code to enjoy the discount.</p>
+                <p>Expires: <span class="expiration"> November 15, 2024</span> 
+                </p>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="3">
+                <div class="logo"> 
+                    <img src= "train.jpeg"> 
+                </div> 
+                <h2>Trip Gurantees On Train!</h2> 
+                <p>Save upto <span class="code">25%</span> on your train journey</p> 
+                <p>Code: <span class="code">Trn25</span></p>
+                <p> Use code to enjoy the discount.</p>
+                <p>Expires: <span class="expiration"> December 15, 2024</span> 
+                </p>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="4">
+                <div class="logo"> 
+                    <img src= "indigo.jpeg"> 
+                </div> 
+                <h2>LIVE NOW! Sale by Indigo!</h2> 
+                <p>Save upto <span class="code">25%</span> on business class travel</p> 
+                <p>Code: <span class="code">Indigo25</span></p>
+                <p> Use code to enjoy the discount.</p>
+                <p>Expires: <span class="expiration"> December 10, 2024</span> 
+                </p>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="5">
+                <div class="logo"> 
+                    <img src= "taj.jpeg"> 
+                </div> 
+                <h2>Celebrate Festivals Of India With Taj!</h2> 
+                <p>Save upto <span class="code">15%</span> on food, beverages and other luxurious Experiences</p> 
+                <p>Code: <span class="code">Taj15</span></p>
+                <p> Use the code to enjoy the discount.</p>
+                <p>Expires: <span class="expiration"> December 31, 2024</span> 
+                </p>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="6">
+                <div class="logo"> 
+                    <img src= "wyndham.jpg"> 
+                </div> 
+                <h2>Experience Luxury On Your Trip!</h2> 
+                <p>Save upto <span class="code">25%</span> on stays at Wyndham Resorts and Hotels</p> 
+                <p>Code: <span class="code">Save25</span></p>
+                <p> Use code to enjoy the discount.</p>
+                <p>Expires: <span class="expiration"> November 15, 2024</span> 
+                </p>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Travel Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+.about{
+    background-color: white;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 12px;   
+}
+.about-header {
+    text-align: center; 
+    padding: 40px 20px;
+    background-color: white;
+}
+.about-header h1 {
+    font-size: 2.5em;
+}
+.about-header p {
+    font-size: 1.2em;
+    color: #1e1f1f;
+    margin-top: 10px;
+}
+.about-section {
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.about-content, .mission {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.about-content h2, .mission h2, .team h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 10px;
+    color: white;
+}
+.about-content p, .mission p {
+    font-size: 1.1em;
+    color: #292828;
+    line-height: 1.6;
+    color: #ccc;
+}
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.team-member:hover {
+    transform: translateY(-5px);
+}
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+.team-member h3 {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 5px;
+}
+.team-member p {
+    font-size: 0.95em;
+    color: #ccc;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+    </style>
+</head>
+<body>
+    <div class="about">
+    <header class="about-header">
+        <h1>About Us</h1>
+        <p>Your gateway to unforgettable travel experiences.</p>
+    </header>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Who We Are</h2>
+            <p>We are a dedicated team of travel enthusiasts who believe that exploring the world is one of life’s greatest pleasures. Our mission is to make travel easy, accessible, and memorable by offering unique travel experiences and personalized itineraries. From bustling cities to secluded beaches, we bring you the best of what the world has to offer.</p>
+        </div>
+        
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to inspire people to travel, to discover new cultures, and to step out of their comfort zones. We aim to make travel planning seamless and stress-free, so you can focus on what really matters: creating unforgettable memories.</p>
+        </div>
+        <div class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="boy.webp" alt="Team Member 1">
+                    <h3>Alex Johnson</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="girl_p.jpg" alt="Team Member 2">
+                    <h3>Emily Chen</h3>
+                    <p>Head of Operations</p>
+                </div>
+                <div class="team-member">
+                    <img src="boy_p.avif" alt="Team Member 3">
+                    <h3>Michael Lee</h3>
+                    <p>Travel Consultant</p>
+                </div>
+                <div class="team-member">
+                    <img src="girl_pro.webp" alt="Team Member 4">
+                    <h3>Sara Martinez</h3>
+                    <p>Marketing Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</body>
+</html>
